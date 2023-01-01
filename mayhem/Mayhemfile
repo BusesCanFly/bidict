@@ -1,0 +1,9 @@
+project: bidict
+
+target: fuzz_bidict
+
+image: ghcr.io/busescanfly/bidict:latest
+
+cmds:
+    - cmd: /src/mayhem/fuzz_bidict.py
+      libfuzzer: true
